@@ -1,4 +1,5 @@
 import kotlin.time.measureTimedValue
+import getDayInput
 
 fun main() {
     val input = parseInput(getDayInput(2))

@@ -20,8 +20,8 @@ fun part1(input: List<String>): Int {
         val digits = line.filter { it.isDigit() }
         "${digits.first()}${digits.last()}".toInt()
     }
-
 }
+
 fun part2(input: List<String>): Int {
     return input.map { it.replace("one", "o1e")
         .replace("two", "t2o")

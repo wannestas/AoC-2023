@@ -8,10 +8,14 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://jitpack.io")
+    }
 }
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("cc.ekblad.konbini:konbini:0.1.2")
 }
 
 tasks.test {
