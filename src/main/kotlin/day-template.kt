@@ -13,9 +13,11 @@ fun parseInput(input: List<String>): List<String> {
     return input
 }
 
-fun part1(input: List<String>) {
+fun part1(input: List<String>): Int {
 
+    return 0
 }
-fun part2(input: List<String>) {
+fun part2(input: List<String>): Int {
 
+    return 0
 }

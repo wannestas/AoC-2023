@@ -12,6 +12,7 @@ import cc.ekblad.konbini.whitespace
 import cc.ekblad.konbini.string as stringp
 import getDayInput
 import println
+import unwrap
 import kotlin.time.measureTimedValue
 
 val colorMap = mapOf(Pair(Color.RED, 12), Pair(Color.GREEN, 13), Pair(Color.BLUE, 14))
@@ -50,7 +51,4 @@ val drawParser = parser {
     val color = oneOf(stringp("red"), stringp("blue"), stringp("green"))
     Draw(amount.toInt(), color)
 }
-
-inline fun <reified T> ParserResult<T>.unwrap() = if (this is ParserResult.Ok) { this.result } else { throw RuntimeException() }
-
 data class Draw(val amount: Int, val color: String)
