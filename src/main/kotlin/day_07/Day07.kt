@@ -43,7 +43,7 @@ class Day07: DayTemplate<List<Hand>, List<Hand>>() {
         return parseInputPart1(input)
     }
 
-    override fun part2(input: List<Hand>): Int {
+    override fun part2(input: List<Hand>): Long {
         return input.sortedWith(Comparator(Hand::compareToPart2))
             .foldIndexed(0) {index, acc, hand ->
                 acc + (index + 1) * hand.bid

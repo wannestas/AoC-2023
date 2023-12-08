@@ -21,9 +21,9 @@ class Day06: DayTemplate<List<Race>, Race>() {
         return input.map { it.beatingTimes }.map { it.last - it.first + 1 }.reduce(Int::times)
     }
 
-    override fun part2(input: Race): Int {
+    override fun part2(input: Race): Long {
         println(input)
-        return input.beatingTimes.last - input.beatingTimes.first + 1
+        return (input.beatingTimes.last - input.beatingTimes.first + 1).toLong()
     }
 
     override fun parseInputPart1(input: List<String>): List<Race> {
