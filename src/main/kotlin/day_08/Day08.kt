@@ -88,8 +88,8 @@ class Day08: DayTemplate<Pair<List<Direction>, Map<String, RoadFork>>, Pair<List
         return maxLcm
     }
 
-    override fun part1(input: Pair<List<Direction>, Map<String, RoadFork>>): Int {
-        var counter = 0
+    override fun part1(input: Pair<List<Direction>, Map<String, RoadFork>>): Long {
+        var counter = 0.toLong()
         var currentRoad = "AAA"
         val (directions, roads) = input
         for (direction in directions.infiniteIterator()) {

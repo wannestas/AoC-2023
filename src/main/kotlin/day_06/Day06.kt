@@ -17,8 +17,8 @@ import kotlin.math.sqrt
 class Day06: DayTemplate<List<Race>, Race>() {
 
 
-    override fun part1(input: List<Race>): Int {
-        return input.map { it.beatingTimes }.map { it.last - it.first + 1 }.reduce(Int::times)
+    override fun part1(input: List<Race>): Long {
+        return input.map { it.beatingTimes }.map { it.last - it.first + 1 }.reduce(Int::times).toLong()
     }
 
     override fun part2(input: Race): Long {

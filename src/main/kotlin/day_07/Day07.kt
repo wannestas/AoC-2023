@@ -32,7 +32,7 @@ class Day07: DayTemplate<List<Hand>, List<Hand>>() {
     override fun parseInputPart1(input: List<String>): List<Hand> {
         return input.map { handParser.parseToEnd(it).unwrap() }
     }
-    override fun part1(input: List<Hand>): Int {
+    override fun part1(input: List<Hand>): Long {
         return input.sorted()
             .foldIndexed(0) {index, acc, hand ->
                 acc + (index + 1) * hand.bid

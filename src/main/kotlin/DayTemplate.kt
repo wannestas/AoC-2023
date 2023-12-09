@@ -21,6 +21,6 @@ abstract class DayTemplate<T, G> {
     abstract fun parseInputPart1(input: List<String>): T
     abstract fun parseInputPart2(input: List<String>): G
 
-    abstract fun part1(input: T): Int
+    abstract fun part1(input: T): Long
     abstract fun part2(input: G): Long
 }
